@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="styles.css">
+<script src="event.js"></script>
+<html>
+  <body class="bg">
+    <ul>
+      
+      <li><a class="active" id="a1" onclick="changeLabel1()" href=#linux>Linux Command</a></li>
+      <li><a id="a2" onclick="changeLabel2()" href=#docker>Docker Command</a></li>  
+    </ul>
+    <br>
+    <center>
+      <div id="box">
+        <label id="l1" for="docker">Docker Command</label>
+        <!-- Input Box -->
+        <input type="text" id="in1" name="command" placeholder="Enetr Command..." onkeyup="autoType()" >
+        <!-- RUN Button -->
+        <input id="submit" type="button" value="RUN"  onclick="sendBackEnd()">
+      </div>
+
+      
+      <pre>
+        <div id="output">[root@localhost ~]# </div>
+      </pre>
+    </center>
+    </div>
+  </body>
+</html>
+
